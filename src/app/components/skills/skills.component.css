@@ -1,0 +1,49 @@
+/* Skills.css */
+
+/* Root styles for the Skills section */
+section {
+    margin-bottom: 2rem; /* Equivalent to mb-8 */
+    padding: 1rem 0;
+  }
+  
+  /* Section heading */
+  section h3 {
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    font-weight: 700; /* Equivalent to font-bold */
+    margin-bottom: 1rem; /* Equivalent to mb-4 */
+    color: #333;
+  }
+  
+  /* Subheadings */
+  section h4 {
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+    margin-bottom: 0.5rem; /* Equivalent to mb-2 */
+    color: #4b5563;
+  }
+  
+  /* List styles */
+  section ul {
+    list-style-type: disc; /* Equivalent to list-disc */
+    padding-left: 1rem; /* Equivalent to list-inside */
+    margin: 0.5rem 0;
+  }
+  
+  section li {
+    margin-bottom: 0.25rem;
+    color: #374151; /* A darker gray for readability */
+  }
+  
+  /* Grid for skills and languages */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem; /* Equivalent to gap-4 */
+  }
+  
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr 1fr; /* Equivalent to md:grid-cols-2 */
+    }
+  }
+  

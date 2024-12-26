@@ -1,0 +1,34 @@
+/* About.css */
+
+/* Root styles for the About section */
+section {
+    margin-bottom: 2rem; /* Equivalent to mb-8 */
+    padding: 1rem 0;
+  }
+  
+  /* Section heading */
+  section h3 {
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    font-weight: 700; /* Equivalent to font-bold */
+    margin-bottom: 1rem; /* Equivalent to mb-4 */
+    color: #333; /* A strong, readable color */
+  }
+  
+  /* Paragraph text */
+  section p {
+    font-size: 1rem; /* Default size for readable text */
+    color: #4b5563; /* Equivalent to text-gray-700 */
+    line-height: 1.6; /* Adds readability with proper spacing */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    section h3 {
+      font-size: 1.25rem; /* Slightly smaller font size for mobile */
+    }
+  
+    section p {
+      font-size: 0.95rem; /* Slightly smaller text size */
+    }
+  }
+  

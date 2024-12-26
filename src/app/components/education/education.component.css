@@ -1,0 +1,35 @@
+/* Education.css */
+
+/* Root styles for the Education section */
+section {
+    margin-bottom: 2rem; /* Equivalent to mb-8 */
+    padding: 1rem 0;
+  }
+  
+  /* Section heading */
+  section h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  /* Education degree */
+  section h4 {
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    font-weight: 600;
+    color: #4b5563;
+  }
+  
+  /* School, period, and location */
+  section p {
+    color: #6b7280;
+    margin: 0.25rem 0;
+  }
+  
+  /* Description */
+  section p.description {
+    color: #374151;
+    margin-top: 0.5rem;
+  }
+  

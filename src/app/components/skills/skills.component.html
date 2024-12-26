@@ -1,0 +1,23 @@
+<section class="mb-8">
+    <h3 class="text-2xl font-bold mb-4">Compétences et qualités</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Compétences techniques</h4>
+        <ul class="list-disc list-inside">
+          <li *ngFor="let skill of skills">{{skill}}</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Langues</h4>
+        <ul class="list-disc list-inside">
+          <li *ngFor="let language of languages">{{language}}</li>
+        </ul>
+        <h4 class="text-xl font-semibold mt-4 mb-2">Qualités personnelles</h4>
+        <ul class="list-disc list-inside">
+          <li *ngFor="let quality of qualities">{{quality}}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  

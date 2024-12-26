@@ -1,0 +1,132 @@
+<div class="container">
+  <!-- Left Section with Profile -->
+  
+
+  <!-- Right Section with Content -->
+  <div class="right-section">
+    <nav class="nav">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#" class="nav-button">Download CV</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+      <div class="intro">
+
+        <h1 class="intro-text">
+          <span class="hello">Hello <span class="wave">👋</span></span><br>
+          <span id="my-name">I'm Walid</span>
+        </h1>
+        <p class="description">{{profile}}</p>
+        <p class="description">{{profile2}}</p>
+        
+        <div class="button-container">
+          <a href="#contact" class="primary-button">Contact Me</a>
+          <a href="#projects" class="secondary-button">View</a>
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <!-- <section id="skills" class="section-content">
+        <h3 class="section-title">Compétences et qualités</h3>
+        <div class="skills-grid">
+          <div class="skills-column">
+            <h4 class="skills-subtitle"></h4>
+            <ul class="skills-list">
+              <li *ngFor="let skill of skills">{{skill}}</li>
+            </ul>
+          </div>
+          <div class="skills-column">
+            <h4 class="skills-subtitle">Langues</h4>
+            <ul class="skills-list">
+              <li *ngFor="let language of languages">{{language}}</li>
+            </ul>
+            
+          </div>
+        </div>
+      </section> -->
+      <div class="technologies">
+        <h1>Technologies</h1>
+        <div class="tech">
+          <ul>
+            <li id="html"></li>
+            <li id="js"></li>
+            <li id="ts"></li>
+            <li id="java"></li>
+            <li id="angular"></li>
+            <li id="docker"></li>
+            <li id="databases"></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Experience Section -->
+      <div class="experience">
+        <h1 class="section-title">Experience</h1>
+        <div class="one-exp">
+          <div class="company-location">
+            <h2>Full Stack Developer Intern</h2>
+            <h3>Noza Agency, Marrakech</h3>
+          </div>
+          <div class="details">
+            <p>
+              My mission is to build a django web application for selling cars, featuring functionalities for adding, searching, dynamic filters, detailed display, and responsive design.
+              Users can post car advertisements with details such as make, model, year, price, and condition.
+              Advanced search and filter options allow potential buyers to narrow down results based on their preferences.
+              Each car listing includes a detailed view with images, descriptions, and seller contact information.
+              The application is optimized for both desktop and mobile devices, ensuring a seamless user experience.
+              Admin tools are provided for managing user listings, monitoring activity, and moderating content.
+            </p>
+            <div class="img-project"></div>
+          </div>
+          <div class="tech-user">
+            <h3>Tech used</h3>
+            <ul>
+              <li id="html"></li>
+              <li id="bootstrap"></li>
+              <li id="python"></li>
+              <li id="django"></li>
+              <li id="sql"></li>
+              
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section-content">
+        <h3 class="section-title">Projets réalisés</h3>
+        <div class="projects-grid">
+          <div *ngFor="let project of projects" class="project-card">
+            <h4 class="project-title">{{project.name}}</h4>
+            <p class="project-description">{{project.description}}</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section-content">
+        <h3 class="section-title">Contact</h3>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <h4 class="contact-label">Adresse</h4>
+            <p class="contact-value">{{contact.address}}</p>
+          </div>
+          <div class="contact-item">
+            <h4 class="contact-label">Téléphone</h4>
+            <p class="contact-value">{{contact.phone}}</p>
+          </div>
+          <div class="contact-item">
+            <h4 class="contact-label">E-mail</h4>
+            <p class="contact-value">{{contact.email}}</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+

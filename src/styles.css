@@ -1,0 +1,76 @@
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-purple: #321e54;
+  --primary-dark: #111111;
+  --primary-light: #FFFFFF;
+  --text-primary: #1A1A1A;
+  --text-secondary: white;
+  --background-body:linear-gradient(to right bottom, #21123b, #321e54, #432a6f, #55378a, #6845a7);
+    --primary-white: #FFFFFF;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  background: var(--background-body);
+  color: var(--text-primary);
+}
+
+/* Global Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Global Button Styles */
+.primary-button,
+.secondary-button {
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.primary-button {
+  background: var(--primary-purple);
+  color: white;
+}
+
+.secondary-button {
+  background: transparent;
+  color: white;
+  border: 1px solid var(--text-secondary);
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Global Media Queries */
+@media (max-width: 1024px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 90%;
+  }
+}
+
